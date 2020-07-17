@@ -4,6 +4,7 @@ dist: bionic
 before_install:
   - sudo apt-get update -yq
   - sudo apt-get install -y context wget unzip make asymptote fonts-dejavu
+  - sudo mv /etc/ImageMagick-6/policy.xml /etc/ImageMagick-6/policy.xmlout
 
 script:
   - make get-fonts
