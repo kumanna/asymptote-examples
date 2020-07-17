@@ -11,7 +11,7 @@ build:
   stage: build
   before_script:
     - export APT_CACHE_DIR=`pwd`/apt-cache && mkdir -pv $APT_CACHE_DIR
-    - apt-get update -yq && apt-get -o dir::cache::archives="$APT_CACHE_DIR" install -y install context wget unzip make asymptote
+    - apt-get update -yq && apt-get -o dir::cache::archives="$APT_CACHE_DIR" install -y context wget unzip make asymptote
   script:
     - make get-fonts
     - make
