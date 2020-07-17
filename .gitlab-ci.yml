@@ -15,6 +15,11 @@ build:
   script:
     - make get-fonts
     - make
+    - make pages
   artifacts:
     paths:
       - public
+
+pages:
+  only:
+  - master
