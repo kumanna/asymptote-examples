@@ -4,8 +4,8 @@ outformat="svg";
 
 size(9cm);
 
-texpreamble("\definefontfamily [myfamily] [serif] [DejaVu Sans Mono][scale=1.33]");
-texpreamble("\definefontfamily [myfamily] [sans] [DejaVu Sans][scale=1.33]");
+texpreamble("\definefontfamily [myfamily] [serif] [Delicious][scale=1.33]");
+texpreamble("\definefontfamily [myfamily] [sans] [Delicious][scale=1.33]");
 texpreamble("\definefontfamily [myfamily] [math] [Neo Euler][scale=1.33]");
 texpreamble("\definefontfamily [myfamily] [mono] [DejaVu Sans Mono][scale=1.33]");
 texpreamble("\setupbodyfont[myfamily]");
