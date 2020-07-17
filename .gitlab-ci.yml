@@ -7,7 +7,7 @@ cache:
   paths:
     - apt-cache
 
-build:
+pages:
   stage: build
   before_script:
     - export APT_CACHE_DIR=`pwd`/apt-cache && mkdir -pv $APT_CACHE_DIR
@@ -19,7 +19,5 @@ build:
   artifacts:
     paths:
       - public
-
-pages:
   only:
   - master
