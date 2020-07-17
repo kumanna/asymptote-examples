@@ -17,6 +17,4 @@ build:
     - make
   artifacts:
     paths:
-      - a-*/*.svg
-      - a-*/*.gif
-      - a-*/*.pdf
+      - public

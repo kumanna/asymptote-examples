@@ -8,8 +8,17 @@ buildall:
 
 clean:
 	for i in a-*;do cd $$i;make clean;cd ..;done
+	$(RM) -r public
 
-.PHONY: clean
+.PHONY: clean pages
+
+pages:
+	mkdir -p public
+	cp index.html public
+	-find -iname '*asy'|grep -v "^[.]/public"|xargs cp -t public
+	-find -iname '*svg'|grep -v "^[.]/public"|xargs cp -t public
+	-find -iname '*pdf'|grep -v "^[.]/public"|xargs cp -t public
+	-find -iname '*gif'|grep -v "^[.]/public"|xargs cp -t public
 
 base_dir := $(shell pwd)
 
