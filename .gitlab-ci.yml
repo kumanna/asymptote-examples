@@ -17,4 +17,6 @@ build:
     - make
   artifacts:
     paths:
-      - APS_presenation.pdf
+      - a-*/*.svg
+      - a-*/*.gif
+      - a-*/*.pdf
